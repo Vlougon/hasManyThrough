@@ -1,0 +1,15 @@
+models:
+
+  Country: 
+    name: string
+    relationships: 
+      hasMany: User
+
+  Post: 
+    user_id: id
+    name: string
+
+controllers:
+  # ...
+
+seeders: Country, Post
