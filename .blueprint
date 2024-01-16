@@ -1,2 +1,13 @@
+created:
+    - database/factories/CountryFactory.php
+    - database/factories/PostFactory.php
+    - database/migrations/2024_01_16_173808_create_countries_table.php
+    - database/migrations/2024_01_16_173809_create_posts_table.php
+    - app/Models/Country.php
+    - app/Models/Post.php
+    - database/seeders/CountrySeeder.php
+    - database/seeders/PostSeeder.php
 models:
     User: {  }
+    Country: { name: string, relationships: { hasMany: User } }
+    Post: { user_id: id, name: string }
